@@ -1,0 +1,41 @@
+:root{
+    --primary-color:#EE4d2d;    
+    --white-color:#fff;
+    ---black-color:#000;
+    --text-color:#333;
+
+    --header-height:120px;
+    --navbar-height:39px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+*{
+    box-sizing: inherit; /*ke thua tu the chua no ,* là nhúng tất các phẩn tử chứ ở đây vào trong web*/
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem; /* hầu hết các dòng chữ trong web đều có chiều dài như này*/
+    font-family: 'Roboto',sans-serif;/*chủng chữ ko chân*/
+    box-sizing: border-box;
+}
+
+/* phần này là chuẩn bị cho rebosive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1 ;
+    }
+}
